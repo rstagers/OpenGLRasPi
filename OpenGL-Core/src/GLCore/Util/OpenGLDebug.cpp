@@ -12,7 +12,7 @@ namespace GLCore::Utils {
 
 	void OpenGLLogMessage(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar* message, const void* userParam)
 	{
-		switch (severity)
+		/* switch (severity)
 		{
 		case GL_DEBUG_SEVERITY_HIGH:
 			if ((int)s_DebugLogLevel > 0)
@@ -35,13 +35,13 @@ namespace GLCore::Utils {
 				LOG_TRACE("[OpenGL Debug NOTIFICATION] {0}", message);
 			break;
 		}
-	}
+*/	}
 
 	void EnableGLDebugging()
 	{
-		glDebugMessageCallback(OpenGLLogMessage, nullptr);
-		glEnable(GL_DEBUG_OUTPUT);
-		glEnable(GL_DEBUG_OUTPUT_SYNCHRONOUS);
+		//glDebugMessageCallback(OpenGLLogMessage, nullptr);
+		//glEnable(GL_DEBUG_OUTPUT);
+		//glEnable(GL_DEBUG_OUTPUT_SYNCHRONOUS);
 	}
 
 }
