@@ -1,5 +1,5 @@
-#version 450 core
-
+#version 310 es
+precision 310 es
 layout (location = 0) out vec4 o_Color;
 
 uniform vec4 u_Color;
