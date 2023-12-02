@@ -7,6 +7,12 @@ Work-in-progress OpenGL library that aims to provide a powerful sandbox for you 
 ## Usage
 ```
 git clone --recursive https://github.com/rstagers/OpenGLRasPi.git
+
+I haven't forked imgui so the code downloaded needs modified.
+You must add this define: #define IMGUI_IMPL_OPENGL_ES3
+to the top of  OpenGL-Core/vendor/imgui/imconfig.h just after the #pragma once
+This will make imgui compiloe for ES 3.0 needed on the Raspberry Pi 4 and 5.
+
 ```
 
 Run `scripts/Linux-Premake.sh` to make the Makefiles then run make -f OpenGL-Examples.make the executable will be in the bin directory.
