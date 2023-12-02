@@ -9,4 +9,4 @@ Work-in-progress OpenGL library that aims to provide a powerful sandbox for you 
 git clone --recursive https://github.com/rstagers/OpenGLRasPi.git
 ```
 
-Run `scripts/Win-Premake.bat` and open `OpenGL-Sandbox.sln` in Visual Studio 2019. `OpenGL-Sandbox/src/SandboxLayer.cpp` contains the example OpenGL code that's running.
+Run `scripts/Linux-Premake.sh` to make the Makefiles then run make -f OpenGL-Examples.make the executable will be in the bin directory.
