@@ -4,7 +4,7 @@ Forked to apply the changes I made to get this working on a RasPi 4 and 5.  They
 # OpenGL-Core
 Work-in-progress OpenGL library that aims to provide a powerful sandbox for you to learn or experiment with OpenGL, and graphics programming in general.
 
-## Usage
+## Usage and buiding
 ```
 git clone --recursive https://github.com/rstagers/OpenGLRasPi.git
 
@@ -13,6 +13,10 @@ You must add this define: #define IMGUI_IMPL_OPENGL_ES3
 to the top of  OpenGL-Core/vendor/imgui/imconfig.h just after the #pragma once
 This will make imgui compiloe for ES 3.0 needed on the Raspberry Pi 4 and 5.
 
+You also need premake5 it builds on the raspberry pi form it's repository.  Once built
+copy the built file into the folder vendor/bin/premake
+
+The repository for premake5 is here: https://github.com/premake/premake-core
 ```
 
 Run `scripts/Linux-Premake.sh` to make the Makefiles then run make -f OpenGL-Examples.make the executable will be in the bin directory.
